@@ -1,0 +1,358 @@
+2025/05/09 14:16:51 - MSPBS-VACUNADOS - Loading job from XML file : [C:/ProyectoFinal/dpl/vacunados/src/jobs/MSPBS-VACUNADOS.kjb]
+2025/05/09 14:16:51 - MSPBS-VACUNADOS - Using run configuration [Pentaho local]
+2025/05/09 14:16:51 - MSPBS-VACUNADOS - exec(3, 0, Start.0)
+2025/05/09 14:16:51 - Start - Starting job entry
+2025/05/09 14:16:51 - MSPBS-VACUNADOS - Starting entry [TRUNCATE TABLES]
+2025/05/09 14:16:51 - MSPBS-VACUNADOS - exec(4, 0, TRUNCATE TABLES.0)
+2025/05/09 14:16:51 - TRUNCATE TABLES - Starting job entry
+2025/05/09 14:16:51 - BIG-DATA-FINAL - New database connection defined
+2025/05/09 14:16:51 - TRUNCATE TABLES - Table [vacunados_temporal] exists.
+2025/05/09 14:16:51 - BIG-DATA-FINAL - Connection to database closed!
+2025/05/09 14:16:51 - MSPBS-VACUNADOS - Starting entry [BUSCAR CSV]
+2025/05/09 14:16:51 - MSPBS-VACUNADOS - exec(5, 0, BUSCAR CSV.0)
+2025/05/09 14:16:51 - BUSCAR CSV - Starting job entry
+2025/05/09 14:16:51 - BUSCAR CSV - [0] file(s) were found in the result filenames...
+2025/05/09 14:16:51 - BUSCAR CSV - Result filenames list was cleared!. [0] file(s) were deleted from the result filenames.
+2025/05/09 14:16:51 - BUSCAR CSV - Processing argument [C:\ProyectoFinal\dataset\procesar].. wildcard [.*\.csv] ?
+2025/05/09 14:16:51 - BUSCAR CSV - Adding file [file:///C:/ProyectoFinal/dataset/procesar/vacunados_covid_V1.csv] to result filenames
+2025/05/09 14:16:51 - MSPBS-VACUNADOS - Starting entry [EXTRAER DATOS]
+2025/05/09 14:16:51 - MSPBS-VACUNADOS - exec(6, 0, EXTRAER DATOS.0)
+2025/05/09 14:16:51 - EXTRAER DATOS - Starting job entry
+2025/05/09 14:16:51 - EXTRAER DATOS - Opening transformation: [C:\ProyectoFinal\dpl\vacunados\src\transformaciones\extraer_datos.ktr]
+2025/05/09 14:16:51 - EXTRAER DATOS - Starting transformation...(file=C:\ProyectoFinal\dpl\vacunados\src\transformaciones\extraer_datos.ktr, name=EXTRAER DATOS, repinfo=null)
+2025/05/09 14:16:51 - EXTRAER DATOS - Using run configuration [Pentaho local]
+2025/05/09 14:16:51 - Extraer datos - Se ha precargado la transformaci?n.
+2025/05/09 14:16:51 - Extraer datos - Iniciado despacho de la transformaci?n [Extraer datos]
+2025/05/09 14:16:51 - Extraer datos - N?mero de argumentos detectados:0 
+2025/05/09 14:16:51 - Extraer datos - Esta no es una transformaci?n de repetici?n
+2025/05/09 14:16:51 - Extraer datos - Se han encontrado 4 pasos distintos para ejecutar.
+2025/05/09 14:16:51 - Extraer datos - Preparando conjuntos de filas...
+2025/05/09 14:16:51 - Extraer datos -  Preparando conjunto de filas para el paso 0 --> Leer datos
+2025/05/09 14:16:51 - Extraer datos -   copias previas = 1, copias siguientes=1
+2025/05/09 14:16:51 - Extraer datos - Transformaci?n ha preparado el nuevo conjunto de filas [Leer datos.0 - Seleccionar variables.0]
+2025/05/09 14:16:51 - Extraer datos -  Se han preparado 1 conjuntos de filas para el paso 0 --> Leer datos  
+2025/05/09 14:16:51 - Extraer datos -  Preparando conjunto de filas para el paso 1 --> Seleccionar variables
+2025/05/09 14:16:51 - Extraer datos -   copias previas = 1, copias siguientes=1
+2025/05/09 14:16:51 - Extraer datos - Transformaci?n ha preparado el nuevo conjunto de filas [Seleccionar variables.0 - Cargar datos crudos.0]
+2025/05/09 14:16:51 - Extraer datos -  Se han preparado 2 conjuntos de filas para el paso 1 --> Seleccionar variables  
+2025/05/09 14:16:51 - Extraer datos -  Preparando conjunto de filas para el paso 2 --> Cargar datos crudos
+2025/05/09 14:16:51 - Extraer datos -  Se han preparado 2 conjuntos de filas para el paso 2 --> Cargar datos crudos  
+2025/05/09 14:16:51 - Extraer datos -  Preparando conjunto de filas para el paso 3 --> Obtener archivo
+2025/05/09 14:16:51 - Extraer datos -   copias previas = 1, copias siguientes=1
+2025/05/09 14:16:51 - Extraer datos - Transformaci?n ha preparado el nuevo conjunto de filas [Obtener archivo.0 - Leer datos.0]
+2025/05/09 14:16:51 - Extraer datos -  Se han preparado 3 conjuntos de filas para el paso 3 --> Obtener archivo  
+2025/05/09 14:16:51 - Extraer datos - Preparando Pasos & Datos de Paso...
+2025/05/09 14:16:51 - Extraer datos -  Transformaci?n va a asignar paso [Leer datos] de tipo [CsvInput]
+2025/05/09 14:16:51 - Leer datos.0 - distribución activada
+2025/05/09 14:16:51 - Leer datos.0 - Iniciando asignación de buffers & nuevos hilos...
+2025/05/09 14:16:51 - Leer datos.0 - Información paso: nrinput=1 nroutput=1
+2025/05/09 14:16:51 - Leer datos.0 - Obtenido paso anterior de [Leer datos] #0 --> Obtener archivo
+2025/05/09 14:16:51 - Leer datos.0 - relación de entrada es 1:1
+2025/05/09 14:16:51 - Leer datos.0 - Se ha encontrado el conjunto de filas de entrada [Obtener archivo.0 - Leer datos.0]
+2025/05/09 14:16:51 - Leer datos.0 - relación de salida es  1:1
+2025/05/09 14:16:51 - Leer datos.0 - Se ha encontrado el conjunto de filas de salida [Leer datos.0 - Seleccionar variables.0]
+2025/05/09 14:16:51 - Leer datos.0 - Envio terminado
+2025/05/09 14:16:51 - Extraer datos -  Transformaci?n ha asignado un paso nuevo: [Leer datos].0
+2025/05/09 14:16:51 - Extraer datos -  Transformaci?n va a asignar paso [Seleccionar variables] de tipo [SelectValues]
+2025/05/09 14:16:51 - Seleccionar variables.0 - distribución activada
+2025/05/09 14:16:51 - Seleccionar variables.0 - Iniciando asignación de buffers & nuevos hilos...
+2025/05/09 14:16:51 - Seleccionar variables.0 - Información paso: nrinput=1 nroutput=1
+2025/05/09 14:16:51 - Seleccionar variables.0 - Obtenido paso anterior de [Seleccionar variables] #0 --> Leer datos
+2025/05/09 14:16:51 - Seleccionar variables.0 - relación de entrada es 1:1
+2025/05/09 14:16:51 - Seleccionar variables.0 - Se ha encontrado el conjunto de filas de entrada [Leer datos.0 - Seleccionar variables.0]
+2025/05/09 14:16:51 - Seleccionar variables.0 - relación de salida es  1:1
+2025/05/09 14:16:51 - Seleccionar variables.0 - Se ha encontrado el conjunto de filas de salida [Seleccionar variables.0 - Cargar datos crudos.0]
+2025/05/09 14:16:51 - Seleccionar variables.0 - Envio terminado
+2025/05/09 14:16:51 - Extraer datos -  Transformaci?n ha asignado un paso nuevo: [Seleccionar variables].0
+2025/05/09 14:16:51 - Extraer datos -  Transformaci?n va a asignar paso [Cargar datos crudos] de tipo [PGBulkLoader]
+2025/05/09 14:16:51 - Cargar datos crudos.0 - distribución activada
+2025/05/09 14:16:51 - Cargar datos crudos.0 - Iniciando asignación de buffers & nuevos hilos...
+2025/05/09 14:16:51 - Cargar datos crudos.0 - Información paso: nrinput=1 nroutput=0
+2025/05/09 14:16:51 - Cargar datos crudos.0 - Obtenido paso anterior de [Cargar datos crudos] #0 --> Seleccionar variables
+2025/05/09 14:16:51 - Cargar datos crudos.0 - relación de entrada es 1:1
+2025/05/09 14:16:51 - Cargar datos crudos.0 - Se ha encontrado el conjunto de filas de entrada [Seleccionar variables.0 - Cargar datos crudos.0]
+2025/05/09 14:16:51 - Cargar datos crudos.0 - Envio terminado
+2025/05/09 14:16:51 - Extraer datos -  Transformaci?n ha asignado un paso nuevo: [Cargar datos crudos].0
+2025/05/09 14:16:51 - Extraer datos -  Transformaci?n va a asignar paso [Obtener archivo] de tipo [FilesFromResult]
+2025/05/09 14:16:51 - Obtener archivo.0 - distribución activada
+2025/05/09 14:16:51 - Obtener archivo.0 - Iniciando asignación de buffers & nuevos hilos...
+2025/05/09 14:16:51 - Obtener archivo.0 - Información paso: nrinput=0 nroutput=1
+2025/05/09 14:16:51 - Obtener archivo.0 - relación de salida es  1:1
+2025/05/09 14:16:51 - Obtener archivo.0 - Se ha encontrado el conjunto de filas de salida [Obtener archivo.0 - Leer datos.0]
+2025/05/09 14:16:51 - Obtener archivo.0 - Envio terminado
+2025/05/09 14:16:51 - Extraer datos -  Transformaci?n ha asignado un paso nuevo: [Obtener archivo].0
+2025/05/09 14:16:51 - Extraer datos - Esta transformaci?n se puede repetir con fecha: 2025/05/09 14:16:51
+2025/05/09 14:16:51 - Extraer datos - Inicializaindo 4 pasos...
+2025/05/09 14:16:51 - Leer datos.0 - Released server socket on port 0
+2025/05/09 14:16:51 - Seleccionar variables.0 - Released server socket on port 0
+2025/05/09 14:16:51 - Cargar datos crudos.0 - Released server socket on port 0
+2025/05/09 14:16:51 - Obtener archivo.0 - Released server socket on port 0
+2025/05/09 14:16:51 - Extraer datos - Se ha podido inicializar el paso [Leer datos.0] correctamente.
+2025/05/09 14:16:51 - Extraer datos - Se ha podido inicializar el paso [Seleccionar variables.0] correctamente.
+2025/05/09 14:16:51 - Extraer datos - Se ha podido inicializar el paso [Cargar datos crudos.0] correctamente.
+2025/05/09 14:16:51 - Extraer datos - Se ha podido inicializar el paso [Obtener archivo.0] correctamente.
+2025/05/09 14:16:51 - Leer datos.0 - Iniciando ejecuci?n...
+2025/05/09 14:16:51 - Seleccionar variables.0 - Iniciando ejecuci?n...
+2025/05/09 14:16:51 - Cargar datos crudos.0 - Iniciando ejecuci?n...
+2025/05/09 14:16:51 - Obtener archivo.0 - Iniciando ejecuci?n...
+2025/05/09 14:16:51 - Extraer datos - Transformaci?n ha preparado 4 hilos y 3 conjuntos de filas.
+2025/05/09 14:16:51 - Obtener archivo.0 - Procesamiento finalizado (I=0, O=0, R=1, W=1, U=0, E=0)
+2025/05/09 14:16:51 - Leer datos.0 - Reading from 1 files.
+2025/05/09 14:16:51 - Leer datos.0 - Header row skipped in file 'file:///C:/ProyectoFinal/dataset/procesar/vacunados_covid_V1.csv'
+2025/05/09 14:16:51 - BIG-DATA-FINAL - New database connection defined
+2025/05/09 14:16:51 - Cargar datos crudos.0 - Detect client_encoding: UTF8
+2025/05/09 14:16:51 - Cargar datos crudos.0 - Launching command: COPY "final".vacunados_temporal ( nombre, apellido, establecimiento, fecha_aplicacion, cedula, dosis, descripcion_vacuna, actualizado_al )  FROM STDIN WITH CSV DELIMITER AS ',' QUOTE AS '"';
+2025/05/09 14:16:51 - Leer datos.0 - Line number : 50000
+2025/05/09 14:16:51 - Seleccionar variables.0 - NumLinea 50000
+2025/05/09 14:16:51 - Leer datos.0 - Line number : 100000
+2025/05/09 14:16:51 - Seleccionar variables.0 - NumLinea 100000
+2025/05/09 14:16:52 - Leer datos.0 - Line number : 150000
+2025/05/09 14:16:52 - Seleccionar variables.0 - NumLinea 150000
+2025/05/09 14:16:52 - Leer datos.0 - Line number : 200000
+2025/05/09 14:16:52 - Seleccionar variables.0 - NumLinea 200000
+2025/05/09 14:16:52 - Leer datos.0 - Line number : 250000
+2025/05/09 14:16:52 - Seleccionar variables.0 - NumLinea 250000
+2025/05/09 14:16:52 - Leer datos.0 - Line number : 300000
+2025/05/09 14:16:53 - Seleccionar variables.0 - NumLinea 300000
+2025/05/09 14:16:53 - Leer datos.0 - Line number : 350000
+2025/05/09 14:16:53 - Seleccionar variables.0 - NumLinea 350000
+2025/05/09 14:16:53 - Leer datos.0 - Line number : 400000
+2025/05/09 14:16:53 - Seleccionar variables.0 - NumLinea 400000
+2025/05/09 14:16:53 - Leer datos.0 - Line number : 450000
+2025/05/09 14:16:53 - Seleccionar variables.0 - NumLinea 450000
+2025/05/09 14:16:54 - Leer datos.0 - Line number : 500000
+2025/05/09 14:16:54 - Seleccionar variables.0 - NumLinea 500000
+2025/05/09 14:16:54 - Leer datos.0 - Line number : 550000
+2025/05/09 14:16:54 - Seleccionar variables.0 - NumLinea 550000
+2025/05/09 14:16:54 - Leer datos.0 - Line number : 600000
+2025/05/09 14:16:54 - Seleccionar variables.0 - NumLinea 600000
+2025/05/09 14:16:55 - Leer datos.0 - Line number : 650000
+2025/05/09 14:16:55 - Seleccionar variables.0 - NumLinea 650000
+2025/05/09 14:16:55 - Leer datos.0 - Line number : 700000
+2025/05/09 14:16:55 - Seleccionar variables.0 - NumLinea 700000
+2025/05/09 14:16:55 - Leer datos.0 - Line number : 750000
+2025/05/09 14:16:55 - Seleccionar variables.0 - NumLinea 750000
+2025/05/09 14:16:56 - Leer datos.0 - Line number : 800000
+2025/05/09 14:16:56 - Seleccionar variables.0 - NumLinea 800000
+2025/05/09 14:16:56 - Leer datos.0 - Line number : 850000
+2025/05/09 14:16:56 - Seleccionar variables.0 - NumLinea 850000
+2025/05/09 14:16:56 - Leer datos.0 - Line number : 900000
+2025/05/09 14:16:56 - Seleccionar variables.0 - NumLinea 900000
+2025/05/09 14:16:56 - Leer datos.0 - Line number : 950000
+2025/05/09 14:16:57 - Seleccionar variables.0 - NumLinea 950000
+2025/05/09 14:16:57 - Leer datos.0 - Line number : 1000000
+2025/05/09 14:16:57 - Leer datos.0 - Procesamiento finalizado (I=1000001, O=0, R=1, W=1000000, U=0, E=0)
+2025/05/09 14:16:57 - Seleccionar variables.0 - NumLinea 1000000
+2025/05/09 14:16:57 - Seleccionar variables.0 - Procesamiento finalizado (I=0, O=0, R=1000000, W=1000000, U=0, E=0)
+2025/05/09 14:16:57 - BIG-DATA-FINAL - Connection to database closed!
+2025/05/09 14:16:57 - Cargar datos crudos.0 - Procesamiento finalizado (I=0, O=1000000, R=1000000, W=1000000, U=0, E=0)
+2025/05/09 14:16:57 - MSPBS-VACUNADOS - Starting entry [TRANSFORMAR DATOS]
+2025/05/09 14:16:57 - MSPBS-VACUNADOS - exec(7, 0, TRANSFORMAR DATOS.0)
+2025/05/09 14:16:57 - TRANSFORMAR DATOS - Starting job entry
+2025/05/09 14:16:57 - TRANSFORMAR DATOS - Opening transformation: [C:\ProyectoFinal\dpl\vacunados\src\transformaciones\transformar_limpiar.ktr]
+2025/05/09 14:16:57 - TRANSFORMAR DATOS - Starting transformation...(file=C:\ProyectoFinal\dpl\vacunados\src\transformaciones\transformar_limpiar.ktr, name=TRANSFORMAR DATOS, repinfo=null)
+2025/05/09 14:16:57 - TRANSFORMAR DATOS - Using run configuration [Pentaho local]
+2025/05/09 14:16:57 - Transformar_limpiar - Se ha precargado la transformaci?n.
+2025/05/09 14:16:57 - Transformar_limpiar - Iniciado despacho de la transformaci?n [Transformar_limpiar]
+2025/05/09 14:16:57 - Transformar_limpiar - N?mero de argumentos detectados:0 
+2025/05/09 14:16:57 - Transformar_limpiar - Esta no es una transformaci?n de repetici?n
+2025/05/09 14:16:57 - Transformar_limpiar - Se han encontrado 1 pasos distintos para ejecutar.
+2025/05/09 14:16:57 - Transformar_limpiar - Preparando conjuntos de filas...
+2025/05/09 14:16:57 - Transformar_limpiar -  Preparando conjunto de filas para el paso 0 --> limpiar y transformar datos
+2025/05/09 14:16:57 - Transformar_limpiar -  Se han preparado 0 conjuntos de filas para el paso 0 --> limpiar y transformar datos  
+2025/05/09 14:16:57 - Transformar_limpiar - Preparando Pasos & Datos de Paso...
+2025/05/09 14:16:57 - Transformar_limpiar -  Transformaci?n va a asignar paso [limpiar y transformar datos] de tipo [ExecSQL]
+2025/05/09 14:16:57 - limpiar y transformar datos.0 - distribución activada
+2025/05/09 14:16:57 - limpiar y transformar datos.0 - Iniciando asignación de buffers & nuevos hilos...
+2025/05/09 14:16:57 - limpiar y transformar datos.0 - Información paso: nrinput=0 nroutput=0
+2025/05/09 14:16:57 - limpiar y transformar datos.0 - Envio terminado
+2025/05/09 14:16:57 - Transformar_limpiar -  Transformaci?n ha asignado un paso nuevo: [limpiar y transformar datos].0
+2025/05/09 14:16:57 - Transformar_limpiar - Esta transformaci?n se puede repetir con fecha: 2025/05/09 14:16:57
+2025/05/09 14:16:57 - Transformar_limpiar - Inicializaindo 1 pasos...
+2025/05/09 14:16:57 - limpiar y transformar datos.0 - Released server socket on port 0
+2025/05/09 14:16:57 - BIG-DATA-FINAL - New database connection defined
+2025/05/09 14:16:57 - limpiar y transformar datos.0 - Conectado a la base de datos...
+2025/05/09 14:16:57 - BIG-DATA-FINAL - launch DDL statement: 
+2025/05/09 14:16:57 - BIG-DATA-FINAL - SET search_path TO final
+2025/05/09 14:16:57 - BIG-DATA-FINAL - launch DDL statement: 
+2025/05/09 14:16:57 - BIG-DATA-FINAL - SET lc_time = 'es_ES'
+2025/05/09 14:16:57 - BIG-DATA-FINAL - launch DDL statement: 
+2025/05/09 14:16:57 - BIG-DATA-FINAL - DROP TABLE IF EXISTS tmp_vacunados
+2025/05/09 14:16:57 - BIG-DATA-FINAL - launch DDL statement: 
+2025/05/09 14:16:57 - BIG-DATA-FINAL - CREATE TEMPORARY TABLE tmp_vacunados AS
+SELECT DISTINCT
+    nombre,
+    apellido,
+    establecimiento,
+    fecha_aplicacion,
+    cedula,
+    dosis,
+    descripcion_vacuna,
+    actualizado_al
+FROM vacunados_temporal
+WHERE establecimiento IS NOT NULL
+  AND descripcion_vacuna IS NOT NULL
+  AND nombre NOT LIKE '%.%'
+2025/05/09 14:18:36 - BIG-DATA-FINAL - launch DDL statement: 
+2025/05/09 14:18:36 - BIG-DATA-FINAL - DROP TABLE IF EXISTS vacunados_oficial CASCADE
+2025/05/09 14:18:36 - BIG-DATA-FINAL - launch DDL statement: 
+2025/05/09 14:18:36 - BIG-DATA-FINAL - DROP TABLE IF EXISTS establecimientos CASCADE
+2025/05/09 14:18:36 - BIG-DATA-FINAL - launch DDL statement: 
+2025/05/09 14:18:36 - BIG-DATA-FINAL - DROP TABLE IF EXISTS vacunas CASCADE
+2025/05/09 14:18:36 - BIG-DATA-FINAL - launch DDL statement: 
+2025/05/09 14:18:36 - BIG-DATA-FINAL - CREATE TABLE establecimientos (
+    id SERIAL PRIMARY KEY,
+    descripcion TEXT UNIQUE
+)
+2025/05/09 14:18:36 - BIG-DATA-FINAL - launch DDL statement: 
+2025/05/09 14:18:36 - BIG-DATA-FINAL - CREATE TABLE vacunas (
+    id SERIAL PRIMARY KEY,
+    descripcion TEXT UNIQUE
+)
+2025/05/09 14:18:36 - BIG-DATA-FINAL - launch DDL statement: 
+2025/05/09 14:18:36 - BIG-DATA-FINAL - DROP TABLE IF EXISTS vacunados_datos_limpios
+2025/05/09 14:18:36 - BIG-DATA-FINAL - launch DDL statement: 
+2025/05/09 14:18:36 - BIG-DATA-FINAL - CREATE TABLE vacunados_datos_limpios (
+    nombre TEXT,
+    apellido TEXT,
+    establecimiento TEXT,
+    fecha_aplicacion DATE,
+    cedula VARCHAR(25),
+    dosis INTEGER,
+    descripcion_vacuna TEXT,
+    actualizado_al DATE
+)
+2025/05/09 14:18:36 - BIG-DATA-FINAL - launch DDL statement: 
+2025/05/09 14:18:36 - BIG-DATA-FINAL - INSERT INTO establecimientos (descripcion)
+SELECT DISTINCT establecimiento
+FROM tmp_vacunados
+ON CONFLICT (descripcion) DO NOTHING
+2025/05/09 14:18:37 - BIG-DATA-FINAL - launch DDL statement: 
+2025/05/09 14:18:37 - BIG-DATA-FINAL - INSERT INTO vacunas (descripcion)
+SELECT DISTINCT
+    CASE 
+        WHEN descripcion_vacuna ILIKE '%sinopharm%' THEN 'Sinopharm'
+        WHEN descripcion_vacuna ILIKE '%pfizer%' THEN 'Pfizer'
+        WHEN descripcion_vacuna ILIKE '%sputnik%' THEN 'Sputnik V'
+        WHEN descripcion_vacuna ILIKE '%moderna%' THEN 'Moderna'
+        WHEN descripcion_vacuna ILIKE '%astrazeneca%' THEN 'AstraZeneca'
+        WHEN descripcion_vacuna ILIKE '%coronavac%' THEN 'Coronavac'
+        WHEN descripcion_vacuna ILIKE '%hayat%' THEN 'Hayat Vax'
+        WHEN descripcion_vacuna ILIKE '%covaxin%' THEN 'Covaxin'
+        ELSE INITCAP(TRIM(descripcion_vacuna))
+    END AS descripcion
+FROM tmp_vacunados
+ON CONFLICT (descripcion) DO NOTHING
+2025/05/09 14:18:41 - BIG-DATA-FINAL - launch DDL statement: 
+2025/05/09 14:18:41 - BIG-DATA-FINAL - INSERT INTO vacunados_datos_limpios (
+    nombre, apellido, establecimiento, fecha_aplicacion, cedula, dosis, descripcion_vacuna, actualizado_al)
+SELECT 
+    v.nombre,
+    v.apellido,
+    v.establecimiento,
+    v.fecha_aplicacion,
+    v.cedula,
+    v.dosis,
+    CASE 
+        WHEN v.descripcion_vacuna ILIKE '%sinopharm%' THEN 'Sinopharm'
+        WHEN v.descripcion_vacuna ILIKE '%pfizer%' THEN 'Pfizer'
+        WHEN v.descripcion_vacuna ILIKE '%sputnik%' THEN 'Sputnik V'
+        WHEN v.descripcion_vacuna ILIKE '%moderna%' THEN 'Moderna'
+        WHEN v.descripcion_vacuna ILIKE '%astrazeneca%' THEN 'AstraZeneca'
+        WHEN v.descripcion_vacuna ILIKE '%coronavac%' THEN 'Coronavac'
+        WHEN v.descripcion_vacuna ILIKE '%hayat%' THEN 'Hayat Vax'
+        WHEN v.descripcion_vacuna ILIKE '%covaxin%' THEN 'Covaxin'
+        ELSE INITCAP(TRIM(v.descripcion_vacuna))
+    END AS descripcion_vacuna,
+    v.actualizado_al
+FROM tmp_vacunados v
+2025/05/09 14:18:47 - BIG-DATA-FINAL - 14 statements executed
+2025/05/09 14:18:47 - Transformar_limpiar - Se ha podido inicializar el paso [limpiar y transformar datos.0] correctamente.
+2025/05/09 14:18:47 - limpiar y transformar datos.0 - Iniciando ejecuci?n...
+2025/05/09 14:18:47 - Transformar_limpiar - Transformaci?n ha preparado 1 hilos y 0 conjuntos de filas.
+2025/05/09 14:18:47 - limpiar y transformar datos.0 - Terminado la lectura de la consulta, cerrando conexi?n.
+2025/05/09 14:18:47 - BIG-DATA-FINAL - Connection to database closed!
+2025/05/09 14:18:47 - limpiar y transformar datos.0 - Procesamiento finalizado (I=0, O=0, R=0, W=1, U=0, E=0)
+2025/05/09 14:18:47 - MSPBS-VACUNADOS - Starting entry [CARGAR DATOS]
+2025/05/09 14:18:47 - MSPBS-VACUNADOS - exec(8, 0, CARGAR DATOS.0)
+2025/05/09 14:18:47 - CARGAR DATOS - Starting job entry
+2025/05/09 14:18:47 - CARGAR DATOS - Opening transformation: [C:\ProyectoFinal\dpl\vacunados\src\transformaciones\cargar_datos.ktr]
+2025/05/09 14:18:47 - CARGAR DATOS - Starting transformation...(file=C:\ProyectoFinal\dpl\vacunados\src\transformaciones\cargar_datos.ktr, name=CARGAR DATOS, repinfo=null)
+2025/05/09 14:18:47 - CARGAR DATOS - Using run configuration [Pentaho local]
+2025/05/09 14:18:47 - cargar_datos - Se ha precargado la transformaci?n.
+2025/05/09 14:18:47 - cargar_datos - Iniciado despacho de la transformaci?n [cargar_datos]
+2025/05/09 14:18:47 - cargar_datos - N?mero de argumentos detectados:0 
+2025/05/09 14:18:47 - cargar_datos - Esta no es una transformaci?n de repetici?n
+2025/05/09 14:18:47 - cargar_datos - Se han encontrado 1 pasos distintos para ejecutar.
+2025/05/09 14:18:47 - cargar_datos - Preparando conjuntos de filas...
+2025/05/09 14:18:47 - cargar_datos -  Preparando conjunto de filas para el paso 0 --> Cargar Datos
+2025/05/09 14:18:47 - cargar_datos -  Se han preparado 0 conjuntos de filas para el paso 0 --> Cargar Datos  
+2025/05/09 14:18:47 - cargar_datos - Preparando Pasos & Datos de Paso...
+2025/05/09 14:18:47 - cargar_datos -  Transformaci?n va a asignar paso [Cargar Datos] de tipo [ExecSQL]
+2025/05/09 14:18:47 - Cargar Datos.0 - distribución activada
+2025/05/09 14:18:47 - Cargar Datos.0 - Iniciando asignación de buffers & nuevos hilos...
+2025/05/09 14:18:47 - Cargar Datos.0 - Información paso: nrinput=0 nroutput=0
+2025/05/09 14:18:47 - Cargar Datos.0 - Envio terminado
+2025/05/09 14:18:47 - cargar_datos -  Transformaci?n ha asignado un paso nuevo: [Cargar Datos].0
+2025/05/09 14:18:47 - cargar_datos - Esta transformaci?n se puede repetir con fecha: 2025/05/09 14:18:47
+2025/05/09 14:18:47 - cargar_datos - Inicializaindo 1 pasos...
+2025/05/09 14:18:47 - Cargar Datos.0 - Released server socket on port 0
+2025/05/09 14:18:47 - BIG-DATA-FINAL - New database connection defined
+2025/05/09 14:18:47 - Cargar Datos.0 - Conectado a la base de datos...
+2025/05/09 14:18:47 - BIG-DATA-FINAL - launch DDL statement: 
+2025/05/09 14:18:47 - BIG-DATA-FINAL - SET search_path TO final
+2025/05/09 14:18:47 - BIG-DATA-FINAL - launch DDL statement: 
+2025/05/09 14:18:47 - BIG-DATA-FINAL - SET lc_time = 'es_ES'
+2025/05/09 14:18:47 - BIG-DATA-FINAL - launch DDL statement: 
+2025/05/09 14:18:47 - BIG-DATA-FINAL - DROP TABLE IF EXISTS vacunados_oficial
+2025/05/09 14:18:47 - BIG-DATA-FINAL - launch DDL statement: 
+2025/05/09 14:18:47 - BIG-DATA-FINAL - CREATE TABLE vacunados_oficial (
+    id SERIAL PRIMARY KEY,
+    nombre TEXT,
+    apellido TEXT,
+    establecimiento_id INTEGER REFERENCES establecimientos(id),
+    fecha_aplicacion DATE,
+    cedula VARCHAR(25),
+    dosis INTEGER,
+    vacuna_id INTEGER REFERENCES vacunas(id),
+    actualizado_al DATE
+)
+2025/05/09 14:18:47 - BIG-DATA-FINAL - launch DDL statement: 
+2025/05/09 14:18:47 - BIG-DATA-FINAL - INSERT INTO vacunados_oficial (nombre, apellido, establecimiento_id, fecha_aplicacion, cedula, dosis, vacuna_id, actualizado_al)
+SELECT 
+    v.nombre,
+    v.apellido,
+    e.id AS establecimiento_id,
+    v.fecha_aplicacion,
+    v.cedula,
+    v.dosis,
+    vac.id AS vacuna_id,
+    v.actualizado_al
+FROM vacunados_datos_limpios v
+JOIN establecimientos e ON v.establecimiento = e.descripcion
+JOIN vacunas vac ON v.descripcion_vacuna = vac.descripcion
+2025/05/09 14:19:00 - BIG-DATA-FINAL - 5 statements executed
+2025/05/09 14:19:00 - cargar_datos - Se ha podido inicializar el paso [Cargar Datos.0] correctamente.
+2025/05/09 14:19:00 - Cargar Datos.0 - Iniciando ejecuci?n...
+2025/05/09 14:19:00 - cargar_datos - Transformaci?n ha preparado 1 hilos y 0 conjuntos de filas.
+2025/05/09 14:19:00 - Cargar Datos.0 - Terminado la lectura de la consulta, cerrando conexi?n.
+2025/05/09 14:19:00 - BIG-DATA-FINAL - Connection to database closed!
+2025/05/09 14:19:00 - Cargar Datos.0 - Procesamiento finalizado (I=0, O=0, R=0, W=1, U=0, E=0)
+2025/05/09 14:19:00 - MSPBS-VACUNADOS - Starting entry [Mover a procesado]
+2025/05/09 14:19:00 - MSPBS-VACUNADOS - exec(9, 0, Mover a procesado.0)
+2025/05/09 14:19:00 - Mover a procesado - Starting job entry
+2025/05/09 14:19:00 - Mover a procesado - Folder [C:\ProyectoFinal\dataset\procesado] exists.
+2025/05/09 14:19:00 - Mover a procesado - 1 file(s) was(were) found in result filenames
+2025/05/09 14:19:00 - Mover a procesado - file:///C:/ProyectoFinal/dataset/procesar/vacunados_covid_V1.csv was moved to C:\ProyectoFinal\dataset\procesado
+2025/05/09 14:19:00 - Mover a procesado - Filename [file:///C:/ProyectoFinal/dataset/procesar/vacunados_covid_V1.csv] was removed from result filenames.
+2025/05/09 14:19:00 - Mover a procesado - Filename [file:///C:/ProyectoFinal/dataset/procesado/vacunados_covid_V1.csv] was added to result filenames.
+2025/05/09 14:19:00 - MSPBS-VACUNADOS - Starting entry [FINALIZAR FLUJO]
+2025/05/09 14:19:00 - MSPBS-VACUNADOS - exec(10, 0, FINALIZAR FLUJO.0)
+2025/05/09 14:19:00 - FINALIZAR FLUJO - Starting job entry
+2025/05/09 14:19:00 - MSPBS-VACUNADOS - Finished job entry [FINALIZAR FLUJO] (result=[true])
+2025/05/09 14:19:00 - MSPBS-VACUNADOS - Finished job entry [Mover a procesado] (result=[true])
+2025/05/09 14:19:00 - MSPBS-VACUNADOS - Finished job entry [CARGAR DATOS] (result=[true])
+2025/05/09 14:19:00 - MSPBS-VACUNADOS - Finished job entry [TRANSFORMAR DATOS] (result=[true])
+2025/05/09 14:19:00 - MSPBS-VACUNADOS - Finished job entry [EXTRAER DATOS] (result=[true])
+2025/05/09 14:19:00 - MSPBS-VACUNADOS - Finished job entry [BUSCAR CSV] (result=[true])
+2025/05/09 14:19:00 - MSPBS-VACUNADOS - Finished job entry [TRUNCATE TABLES] (result=[true])
